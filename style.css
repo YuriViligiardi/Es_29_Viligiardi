@@ -1,0 +1,15 @@
+#bodyForm {
+    border: 5px solid black;
+    border-radius: 30px;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    margin-top: 5%;
+    padding: 50px;
+}
+
+#flag {
+    margin: auto;
+    width: 10%;
+    height: 100px;
+}
