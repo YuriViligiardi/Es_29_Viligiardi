@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>valuta.html </title>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="bodyForm">
-    <form action="cambio.php" method="get">
-        <h2>Inserisci l'importo che vuoi cambiare</h2>
-        <input type="text" name="importo">
-        <h3>Tipo di valuta desiderata: </h3>
-        <select id="select" name="valuta" onchange="showFlag()">
-            <option value="dollaro">dollaro</option>
-            <option value="yen">yen</option>
-            <option value="franchi svizzeri">franchi svizzeri</option>
-            <option value="sterline">sterline</option>
-        </select>
-        <br>
-        <br>
-        <img id="flag" src="https://www.worldometers.info/img/flags/us-flag.gif" alt="Bandiera">
-        <br>
-        <br>
-        <input type="submit" value="CAMBIA">
-    </form>
+<body>
+    <div id="divForm">
+        <form action="cambio.php" method="get">
+                <h1>CAMBIO VALUTE</h1>
+                <br>
+                <h2>Inserisci l'importo che vuoi cambiare</h2>
+                <input type="text" name="importo">
+                <h3>Tipo di valuta desiderata: </h3>
+                <select id="select" name="valuta" onchange="showFlag()">
+                    <option value="dollaro">dollaro</option>
+                    <option value="yen">yen</option>
+                    <option value="franchi svizzeri">franchi svizzeri</option>
+                    <option value="sterline">sterline</option>
+                </select>
+                <br>
+                <br>
+                <img id="flag" src="https://www.worldometers.info/img/flags/us-flag.gif" alt="Bandiera">
+                <br>
+                <br>
+                <input type="submit" value="CAMBIA">
+        </form>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
 </body>
 </html>
